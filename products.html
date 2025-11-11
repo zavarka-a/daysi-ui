@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши игры - GameStudio</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Навигация -->
+    <div class="navbar bg-base-100 shadow-lg">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="products.html">Игры</a></li>
+                    <li><a href="team.html">Команда</a></li>
+                    <li><a href="contact.html">Обратная связь</a></li>
+                    <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+            <a href="index.html" class="btn btn-ghost normal-case text-xl">🎮 GameStudio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="products.html" class="active">Игры</a></li>
+                <li><a href="team.html">Команда</a></li>
+                <li><a href="contact.html">Обратная связь</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a class="btn btn-primary btn-sm">Войти</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero min-h-60 bg-gradient-to-r from-primary to-secondary">
+        <div class="hero-content text-center text-white">
+            <div class="max-w-md">
+                <h1 class="text-5xl font-bold">Наши игры</h1>
+                <p class="py-6">Откройте для себя мир захватывающих приключений</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Контент -->
+    <div class="container mx-auto px-4 py-12">
+        <!-- Фильтры -->
+        <div class="flex flex-wrap gap-2 mb-8 justify-center">
+            <button class="btn btn-primary">Все игры</button>
+            <button class="btn btn-outline">Action</button>
+            <button class="btn btn-outline">RPG</button>
+            <button class="btn btn-outline">Strategy</button>
+            <button class="btn btn-outline">Indie</button>
+        </div>
+
+        <!-- Популярные игры -->
+        <h2 class="text-3xl font-bold mb-6">Популярные игры</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <div class="card bg-base-200 shadow-xl">
+                <img src="img/cyberwarriors.png" alt="" style="border-radius: 18px;">
+                <div class="card-body">
+                    <h2 class="card-title">Cyber Warriors</h2>
+                    <p>Футуристический шутер в киберпанк-сеттинге с захватывающим сюжетом</p>
+                    <div class="flex gap-2 mt-2">
+                        <div class="badge badge-primary">Action</div>
+                        <div class="badge badge-secondary">Multiplayer</div>
+                    </div>
+                    <div class="card-actions justify-between items-center mt-4">
+                        <div class="text-2xl font-bold">$29.99</div>
+                        <button class="btn btn-primary">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-base-200 shadow-xl">
+                <img src="img/fr.png" alt="" style="border-radius: 18px;">
+                <div class="card-body">
+                    <h2 class="card-title">Fantasy Realms</h2>
+                    <p>Масштабная RPG с открытым миром и уникальной системой магии</p>
+                    <div class="flex gap-2 mt-2">
+                        <div class="badge badge-accent">RPG</div>
+                        <div class="badge badge-info">Open World</div>
+                    </div>
+                    <div class="card-actions justify-between items-center mt-4">
+                        <div class="text-2xl font-bold">$39.99</div>
+                        <button class="btn btn-primary">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-base-200 shadow-xl">
+               <img src="img/strategy.png" alt="" style="border-radius: 18px;">
+                <div class="card-body">
+                    <h2 class="card-title">Empire Builder</h2>
+                    <p>Стратегия с элементами градостроительства и управления ресурсами</p>
+                    <div class="flex gap-2 mt-2">
+                        <div class="badge badge-success">Strategy</div>
+                        <div class="badge badge-warning">Simulation</div>
+                    </div>
+                    <div class="card-actions justify-between items-center mt-4">
+                        <div class="text-2xl font-bold">$24.99</div>
+                        <button class="btn btn-primary">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-base-200 shadow-xl">
+               <img src="img/pixel.png" alt="" style="border-radius: 18px;">
+                <div class="card-body">
+                    <h2 class="card-title">Pixel Adventure</h2>
+                    <p>Инди-платформер в ретро-стиле с креативными головоломками</p>
+                    <div class="flex gap-2 mt-2">
+                        <div class="badge badge-error">Indie</div>
+                        <div class="badge badge-primary">Platformer</div>
+                    </div>
+                    <div class="card-actions justify-between items-center mt-4">
+                        <div class="text-2xl font-bold">$14.99</div>
+                        <button class="btn btn-primary">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-base-200 shadow-xl">
+                <img src="img/scace.png" alt="" style="border-radius: 18px;">
+                <div class="card-body">
+                    <h2 class="card-title">Space Odyssey</h2>
+                    <p>Космическая стратегия с элементами исследования галактики</p>
+                    <div class="flex gap-2 mt-2">
+                        <div class="badge badge-primary">Strategy</div>
+                        <div class="badge badge-secondary">Sci-Fi</div>
+                    </div>
+                    <div class="card-actions justify-between items-center mt-4">
+                        <div class="text-2xl font-bold">$34.99</div>
+                        <button class="btn btn-primary">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-200 shadow-xl">
+            <img src="img/racing.png" alt="" style="border-radius: 18px";>
+            <div class="card-body">
+                <h2 class="card-title">Racing Legends</h2>
+                <p>Реалистичный симулятор гонок с множеством трасс и автомобилей</p>
+                <div class="flex gap-2 mt-2">
+                    <div class="badge badge-accent">Racing</div>
+                    <div class="badge badge-info">Multiplayer</div>
+                </div>
+                <div class="card-actions justify-between items-center mt-4">
+                    <div class="text-2xl font-bold">$44.99</div>
+                    <button class="btn btn-primary">Купить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+        <!-- Блог/Новости -->
+        <h2 class="text-3xl font-bold mb-6">Последние новости</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Новость 1 -->
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <div class="text-sm text-gray-500 mb-2">5 ноября 2025</div>
+                    <h2 class="card-title">Анонс нового DLC для Cyber Warriors</h2>
+                    <p>Мы рады представить новое дополнение "Neon Streets", которое добавит три новых локации, уникальное оружие и захватывающую сюжетную линию...</p>
+                    <div class="card-actions justify-end mt-4">
+                        <button onclick="openNews('news1')" class="btn btn-primary btn-sm">Читать далее</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Новость 2 -->
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <div class="text-sm text-gray-500 mb-2">1 ноября 2025</div>
+                    <h2 class="card-title">Fantasy Realms достигла 5 миллионов игроков</h2>
+                    <p>Спустя всего месяц после релиза, наша RPG Fantasy Realms покорила сердца миллионов игроков по всему миру...</p>
+                    <div class="card-actions justify-end mt-4">
+                        <button onclick="openNews('news2')" class="btn btn-primary btn-sm">Читать далее</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Новость 3 -->
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <div class="text-sm text-gray-500 mb-2">28 октября 2025</div>
+                    <h2 class="card-title">Обновление 2.0 для Empire Builder</h2>
+                    <p>Крупное обновление добавляет новую эру "Индустриальная революция", переработанную экономическую систему и режим кооператива...</p>
+                    <div class="card-actions justify-end mt-4">
+                        <button onclick="openNews('news3')" class="btn btn-primary btn-sm">Читать далее</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Новость 4 -->
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <div class="text-sm text-gray-500 mb-2">25 октября 2025</div>
+                    <h2 class="card-title">Pixel Adventure выиграла награду "Лучшая инди-игра"</h2>
+                    <p>Наша команда невероятно горда получить награду "Лучшая инди-игра 2025" на Game Awards...</p>
+                    <div class="card-actions justify-end mt-4">
+                        <button onclick="openNews('news4')" class="btn btn-primary btn-sm">Читать далее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальные окна для новостей -->
+    
+    <!-- Модальное окно новости 1 -->
+    <dialog id="news1" class="modal">
+        <div class="modal-box max-w-3xl">
+            <h3 class="font-bold text-2xl mb-2">Анонс нового DLC для Cyber Warriors</h3>
+            <div class="text-sm text-gray-500 mb-4">5 ноября 2025</div>
+            <div class="divider"></div>
+            <div class="prose max-w-none">
+                <p class="text-lg mb-4">
+                    Мы рады представить новое дополнение "Neon Streets", которое добавит три новых локации, уникальное оружие и захватывающую сюжетную линию. Релиз запланирован на декабрь 2025 года.
+                </p>
+                <p class="mb-4">
+                    <strong>Что нового в DLC:</strong>
+                </p>
+                <ul class="list-disc list-inside mb-4 space-y-2">
+                    <li>Три новые локации в неоновом стиле: Токийский квартал, Корпоративная башня, Подземный город</li>
+                    <li>15 видов нового футуристического оружия с уникальными модификациями</li>
+                    <li>Новая сюжетная кампания на 8-10 часов игрового времени</li>
+                    <li>Режим "Неоновая охота" для мультиплеера на 16 игроков</li>
+                    <li>Более 30 новых достижений</li>
+                    <li>Улучшенная графика с поддержкой трассировки лучей</li>
+                </ul>
+                <p class="mb-4">
+                    "Neon Streets" продолжит историю главного героя и откроет новые тайны киберпанк-мира Cyber Warriors. Игроков ждут неожиданные повороты сюжета, новые союзники и опасные враги.
+                </p>
+                <p class="mb-4">
+                    <strong>Цена:</strong> $14.99 для владельцев базовой игры. Специальная скидка 20% при предзаказе до 1 декабря!
+                </p>
+                <div class="alert alert-info mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span>Подпишитесь на нашу рассылку, чтобы первыми узнать о точной дате релиза!</span>
+                </div>
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn">Закрыть</button>
+                </form>
+            </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
+
+    <!-- Модальное окно новости 2 -->
+    <dialog id="news2" class="modal">
+        <div class="modal-box max-w-3xl">
+            <h3 class="font-bold text-2xl mb-2">Fantasy Realms достигла 5 миллионов игроков</h3>
+            <div class="text-sm text-gray-500 mb-4">1 ноября 2025</div>
+            <div class="divider"></div>
+            <div class="prose max-w-none">
+                <p class="text-lg mb-4">
+                    Спустя всего месяц после релиза, наша RPG Fantasy Realms покорила сердца миллионов игроков по всему миру. Спасибо за вашу поддержку! В честь этого события проводим специальную акцию.
+                </p>
+                <p class="mb-4">
+                    <strong>Достижения за первый месяц:</strong>
+                </p>
+                <ul class="list-disc list-inside mb-4 space-y-2">
+                    <li>5 миллионов активных игроков</li>
+                    <li>Рейтинг 9.2/10 на основе 250,000 отзывов</li>
+                    <li>Более 100 миллионов часов игрового времени</li>
+                    <li>Самая продаваемая RPG октября 2025</li>
+                    <li>Номинация на "Игру года"</li>
+                </ul>
+                <p class="mb-4">
+                    Мы благодарны каждому игроку за поддержку и ценные отзывы. Ваши предложения помогают нам улучшать игру и делать ее еще лучше.
+                </p>
+                <p class="mb-4">
+                    <strong>Праздничная акция:</strong>
+                </p>
+                <ul class="list-disc list-inside mb-4 space-y-2">
+                    <li>Скидка 25% на игру до 15 ноября</li>
+                    <li>Бесплатный набор "Легендарный герой" для всех игроков</li>
+                    <li>Удвоенный опыт в течение недели</li>
+                    <li>Специальное событие "Праздник урожая" с уникальными наградами</li>
+                </ul>
+                <div class="alert alert-success mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    <span>Войдите в игру до 15 ноября, чтобы получить все бонусы!</span>
+                </div>
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn">Закрыть</button>
+                </form>
+            </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
+
+    <!-- Модальное окно новости 3 -->
+    <dialog id="news3" class="modal">
+        <div class="modal-box max-w-3xl">
+            <h3 class="font-bold text-2xl mb-2">Обновление 2.0 для Empire Builder</h3>
+            <div class="text-sm text-gray-500 mb-4">28 октября 2025</div>
+            <div class="divider"></div>
+            <div class="prose max-w-none">
+                <p class="text-lg mb-4">
+                    Крупное обновление добавляет новую эру "Индустриальная революция", переработанную экономическую систему и режим кооператива до 4 игроков. Обновление доступно бесплатно для всех владельцев игры.
+                </p>
+                <p class="mb-4">
+                    <strong>Основные нововведения:</strong>
+                </p>
+                <ul class="list-disc list-inside mb-4 space-y-2">
+                    <li><strong>Новая эра:</strong> Индустриальная революция с заводами, железными дорогами и паровыми технологиями</li>
+                    <li><strong>Кооператив:</strong> Стройте империю вместе с друзьями (2-4 игрока)</li>
+                    <li><strong>Экономика 2.0:</strong> Переработанная торговая система с динамическими ценами</li>
+                    <li><strong>Новые здания:</strong> 25 типов промышленных зданий</li>
+                    <li><strong>Технологии:</strong> Древо исследований расширено на 40 новых технологий</li>
+                    <li><strong>Дипломатия:</strong> Улучшенная система альянсов и торговых соглашений</li>
+                </ul>
+                <p class="mb-4">
+                    <strong>Улучшения геймплея:</strong>
+                </p>
+                <ul class="list-disc list-inside mb-4 space-y-2">
+                    <li>Оптимизация производительности - игра работает на 30% быстрее</li>
+                    <li>Новый ИИ противников с адаптивным поведением</li>
+                    <li>Система достижений с 50 новыми наградами</li>
+                    <li>Улучшенный интерфейс с возможностью настройки</li>
+                    <li>Поддержка модов через Steam Workshop</li>
+                </ul>
+                <p class="mb-4">
+                    Режим кооператива позволяет игрокам совместно управлять империей или конкурировать за ресурсы и территории. Выбирайте стратегию: сотрудничество или соперничество!
+                </p>
+                <div class="alert alert-warning mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+                    <span>Обновление весит 2.5 ГБ. Рекомендуем обновиться при стабильном интернет-соединении.</span>
+                </div>
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn">Закрыть</button>
+                </form>
+            </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
+
+    <!-- Модальное окно новости 4 -->
+    <dialog id="news4" class="modal">
+        <div class="modal-box max-w-3xl">
+            <h3 class="font-bold text-2xl mb-2">Pixel Adventure выиграла награду "Лучшая инди-игра"</h3>
+            <div class="text-sm text-gray-500 mb-4">25 октября 2025</div>
+            <div class="divider"></div>
+            <div class="prose max-w-none">
+                <p class="text-lg mb-4">
+                    Наша команда невероятно горда получить награду "Лучшая инди-игра 2025" на Game Awards! Это достижение стало возможным благодаря вашей поддержке и любви к нашей игре.
+                </p>
+                <p class="mb-4">
+                    <strong>История успеха:</strong>
+                </p>
+                <p class="mb-4">
+                    Pixel Adventure начиналась как проект небольшой команды из 5 человек, мечтавших создать ностальгический платформер с современным геймплеем. За 2 года разработки мы вложили всю свою страсть и креативность в каждый пиксель этой игры.
+                </p>
+                <p class="mb-4">
+                    <strong>Награды и признание:</strong>
+                </p>
+                <ul class="list-disc list-inside mb-4 space-y-2">
+                    <li>Game Awards 2025 - "Лучшая инди-игра"</li>
+                    <li>IndieGame Festival - "Выбор игроков"</li>
+                    <li>GameDev Choice Awards - "Лучший дизайн уровней"</li>
+                    <li>Steam Awards - номинация "Самая инновационная игра"</li>
+                </ul>
+                <p class="mb-4">
+                    <strong>Что игроки говорят о нас:</strong>
+                </p>
+                <div class="bg-base-300 p-4 rounded-lg mb-4">
+                    <p class="italic">"Pixel Adventure - это любовное письмо классическим платформерам с идеальным балансом сложности и веселья!" - IGN 9/10</p>
+                </div>
+                <div class="bg-base-300 p-4 rounded-lg mb-4">
+                    <p class="italic">"Каждый уровень - это произведение искусства. Лучший платформер года!" - GameSpot 9.5/10</p>
+                </div>
+                <p class="mb-4">
+                    <strong>Празднуем вместе с вами:</strong>
+                </p>
+                <ul class="list-disc list-inside mb-4 space-y-2">
+                    <li>Игра со скидкой 40% до конца недели</li>
+                    <li>Бесплатное обновление с 10 новыми уровнями уже доступно</li>
+                    <li>Эксклюзивный саундтрек в подарок всем игрокам</li>
+                    <li>Конкурс фан-арта с призовым фондом $5000</li>
+                </ul>
+                <p class="mb-4">
+                    Мы продолжим развивать Pixel Adventure и уже работаем над сиквелом! Следите за обновлениями.
+                </p>
+                <div class="alert alert-success mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    <span>Спасибо за то, что сделали нашу мечту реальностью! ❤️</span>
+                </div>
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn">Закрыть</button>
+                </form>
+            </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
+
+    <!-- Footer -->
+    <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded mt-12">
+        <div class="grid grid-flow-col gap-4">
+            <a href="about.html" class="link link-hover">О компании</a>
+            <a href="contact.html" class="link link-hover">Контакты</a>
+            <a href="team.html" class="link link-hover">Команда</a>
+            <a href="privacy.html" class="link link-hover">Политика конфиденциальности</a>
+        </div>
+        <div>
+            <p>© 2025 GameStudio. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Функция для открытия полной новости
+        function openNews(newsId) {
+            const modal = document.getElementById(newsId);
+            modal.showModal();
+        }
+
+         // Функция для фильтрации игр по жанрам
+    function filterGames(genre) {
+        const games = document.querySelectorAll('.game-card');
+        const buttons = document.querySelectorAll('.filter-btn');
+        
+        // Обновляем активную кнопку
+        buttons.forEach(btn => {
+            btn.classList.remove('btn-primary');
+            btn.classList.add('btn-outline');
+        });
+        event.target.classList.remove('btn-outline');
+        event.target.classList.add('btn-primary');
+        
+        // Фильтруем игры
+        games.forEach(game => {
+            if (genre === 'all' || game.dataset.genre === genre) {
+                game.style.display = 'block';
+            } else {
+                game.style.display = 'none';
+            }
+        });
+    }
+    </script>
+</body>
+</html>

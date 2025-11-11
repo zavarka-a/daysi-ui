@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании - GameStudio</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Навигация -->
+    <div class="navbar bg-base-100 shadow-lg">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="products.html">Игры</a></li>
+                    <li><a href="team.html">Команда</a></li>
+                    <li><a href="contact.html">Обратная связь</a></li>
+                    <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+            <a href="index.html" class="btn btn-ghost normal-case text-xl">🎮 GameStudio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html" class="active">О компании</a></li>
+                <li><a href="products.html">Игры</a></li>
+                <li><a href="team.html">Команда</a></li>
+                <li><a href="contact.html">Обратная связь</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a class="btn btn-primary btn-sm">Войти</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero min-h-60 bg-gradient-to-r from-secondary to-accent">
+        <div class="hero-content text-center text-white">
+            <div class="max-w-md">
+                <h1 class="text-5xl font-bold">О компании</h1>
+                <p class="py-6">Узнайте больше о нашей истории и ценностях</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Контент -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="prose max-w-none mb-12">
+            <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title text-3xl mb-4">Наша история</h2>
+                    <p class="text-lg mb-4">
+                        GameStudio была основана в 2015 году группой энтузиастов, которые мечтали создавать игры мирового уровня. 
+                        За эти годы мы выросли из небольшой студии в признанную компанию с офисами по всему миру.
+                    </p>
+                    <p class="text-lg">
+                        Наша команда состоит из более чем 200 профессионалов, включая разработчиков, дизайнеров, художников и 
+                        специалистов по звуку. Мы создали более 15 успешных игр, которые полюбились миллионам игроков.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ценности -->
+        <h2 class="text-3xl font-bold text-center mb-8">Наши ценности</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="card bg-primary text-primary-content shadow-xl">
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title text-2xl">🎨 Креативность</h2>
+                    <p>Мы поощряем новаторские идеи и творческий подход к созданию игр</p>
+                </div>
+            </div>
+            <div class="card bg-secondary text-secondary-content shadow-xl">
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title text-2xl">🤝 Сотрудничество</h2>
+                    <p>Работа в команде - ключ к созданию великолепных игр</p>
+                </div>
+            </div>
+            <div class="card bg-accent text-accent-content shadow-xl">
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title text-2xl">💎 Качество</h2>
+                    <p>Мы не идем на компромиссы когда речь идет о качестве наших игр</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Достижения -->
+        <div class="stats stats-vertical lg:stats-horizontal shadow w-full bg-base-200">
+            <div class="stat">
+                <div class="stat-figure text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <div class="stat-title">Основана</div>
+                <div class="stat-value text-primary">2015</div>
+                <div class="stat-desc">10 лет на рынке</div>
+            </div>
+            
+            <div class="stat">
+                <div class="stat-figure text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                </div>
+                <div class="stat-title">Сотрудников</div>
+                <div class="stat-value text-secondary">200+</div>
+                <div class="stat-desc">По всему миру</div>
+            </div>
+            
+            <div class="stat">
+                <div class="stat-figure text-accent">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                </div>
+                <div class="stat-title">Игр создано</div>
+                <div class="stat-value text-accent">15+</div>
+                <div class="stat-desc">И продолжаем расти</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded mt-12">
+        <div class="grid grid-flow-col gap-4">
+            <a href="about.html" class="link link-hover">О компании</a>
+            <a href="contact.html" class="link link-hover">Контакты</a>
+            <a href="team.html" class="link link-hover">Команда</a>
+            <a href="privacy.html" class="link link-hover">Политика конфиденциальности</a>
+        </div>
+        <div>
+            <p>© 2025 GameStudio. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
